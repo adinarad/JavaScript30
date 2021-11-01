@@ -2,8 +2,8 @@
 > Course created by [Wes Bos](https://github.com/wesbos).
 > Join the challenge (for free!) here - [JavaScript30](https://javascript30.com/account)
 
-This repository includes my solutions for the 30 Days JavaScript challenge. These may differ from the original solutions as I tried to incorporate some 'best practices' or 
-just to enhance the UI.
+This repository includes my solutions for the 30 Days JavaScript challenge. These may differ from the original solutions as I tried to incorporate some 'best practices' and 
+some changes to enhance the UI.
 
 ## About
 Challenge involves building 30 things in 30 days using *Vanilla JavaScript* (No Frameworks or Libraries):computer:.
