@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="javascript" href="script.js"> -->
+    <title>Clock</title>
+</head>
+
+<body>
+    <div class="clock">
+        <div class="clock-face">
+            <div class="hand hour-hand"></div>
+            <div class="hand min-hand"></div>
+            <div class="hand second-hand"></div>
+        </div>
+    </div>
+
+    <script>
+        const secondHand = document.querySelector('.second-hand');
+        const minHand = document.querySelector('.min-hand');
+        const hourHand = document.querySelector('.hour-hand');
+
+        function updateClock() {
+            // Get current time
+            const now = new Date();
+            const seconds = now.getSeconds();
+            const minutes = now.getMinutes();
+            const hours = now.getHours();
+
+            // Calculate the degree shift for current seconds, minutes, and hour
+            const secDeg = getDegrees(seconds, 60);
+            const minDeg = getDegrees(minutes, 60);
+            const hourDeg = getDegrees(hours, 12);
+
+            // Apply rotation to the clock hands corresponding with current time value
+            secondHand.style.transform = `rotate(${secDeg}deg)`;
+            minHand.style.transform = `rotate(${minDeg}deg)`;
+            hourHand.style.transform = `rotate(${hourDeg}deg)`;
+        }
+
+        function getDegrees(unit, totalUnits) {
+            return ((360 / totalUnits) * unit) + 90;
+        }
+
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+
+</html>
