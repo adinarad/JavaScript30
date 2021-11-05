@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables and JS</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+    <div class="controls">
+        <label for="bradius">Border Radius:</label>
+        <input type="range" id="bradius" name="bradius" min="0" max="200" value="5" data-sizing="px">
+
+        <label for="spacing">Spacing:</label>
+        <input type="range" id="spacing" name="spacing" min="0" max="100" value="10" data-sizing="px">
+
+        <label for="blur">Blur:</label>
+        <input type="range" id="blur" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+        <label for="base">Base Color:</label>
+        <input type="color" id="base" name="base" value="#ffc600">
+    </div>
+
+    <img src="https://media.gettyimages.com/photos/rio-at-sunset-and-at-night-picture-id1141817461?s=2048x2048"
+        alt="Sample Photo">
+
+    <script src="script.js"></script>
+</body>
+
+</html>
